@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="static/js/jquery.js"></script>
+        <link rel="stylesheet" type="text/css" href="static/css/style.css">
+        <title>A_Square</title>
+        <link rel="icon" type="image/png" href="static/assets/logo.png">
+    </head>
+
+    <body>
+        
+        <div id="head">
+
+            <h1>Resume Screening</h1>
+        
+        </div>
+
+        <div id="main">
+
+            <div id="card1"> 
+
+                <div id="listWraper">
+
+                    <ul id="cvList" class="list">
+
+                        <!-- List items that may overflow and require a scroll bar -->
+                        <!-- <li><img src="static/assets/cv.png" height="30px"> <div class="divider"></div> <p id="fileName">pdf.name</p></li> -->
+                        <li>CV Queue: Empty</li>
+                        
+                    </ul>
+                    
+                    <div id="listBottom">
+                        <label for="cvFiles" class="Button">
+                            <span class="jd"> <img src="static/assets/upload-big-arrow.png" height="30px" class="jd">Post Cv</span>
+                            <input type="file" id="cvFiles" name="myfile" class="jd" accept=".pdf" multiple>
+                        </label>
+                    </div>
+
+                </div><br>
+                <div id="jdWrapper">
+                    
+                    <div id="jdFileName" >Selected: none</div>
+
+                    <label for="jdFile" class="Button">
+                        <span class="jd"> <img src="static/assets/upload-big-arrow.png" height="30px" class="jd">Post Jd</span>
+                        <input type="file" id="jdFile" name="myfile" class="jd" accept=".pdf">
+                    </label>  
+
+            
+                 </div>
+                
+                 
+            </div>
+
+            <div id="cardMain"> 
+                <div id="card2">
+
+                    <br>
+                    <div id="card">
+
+                        <img src="static/assets/cv.png" height="80px" > 
+                            &nbsp;&nbsp;
+                        <div class ="divider"></div>
+  
+                        <div class="loadBg"> 
+                            <div class="alignRow"><b>Currently Checking:&nbsp</b> <span id="state"> - </span></div> 
+                            <div><b>Status Bar: </b> <span id="loadingBarState">0 %</span></div>
+                            <div class="loadBar">
+                                <div id="load"></div>
+                            </div>
+                        </div>
+                         
+                    </div>
+
+                    <br> 
+                    
+                    <div id="box">
+                        
+                        <br>
+                        <div id="wraperBox">
+   
+                            <label for="submit" class="Button">
+                                <span class="jd"> <img src="static/assets/play.png" height="30px" class="jd">Start</span>
+                                <input type="submit" id="submit" name="submit" class="jd">
+                            </label>
+                            
+                        </div>
+                    </div>
+                    <p id="error"></p>
+                    <br>
+                </div>
+
+                <h2>&nbsp;&nbsp;Output</h2>
+
+                <div id="card3">
+                    
+                    <div id="left">
+                    
+                        <h3>Cv Match</h3>
+                        <div id="match">No Cv Parsed Yet! </div>
+                        
+                    </div>
+                    <div id="right">
+                        <h3>Parsed Content</h3>
+                                    
+                        <textarea id="cv_content" readonly>Parsed content will be shown here. Select Parsed Entity to view Detail form the Cv Scores Column</textarea>
+                    
+                </div>
+                    
+    
+                </div>
+                
+
+            </div>
+
+            <div id="card1"> 
+                
+                <div id="listWraper">
+                    <ul id="parsedCvList" class="list"> 
+
+                        <!-- <li><div id="jsScore">75.04%</div> <div class="divider"></div> <p id="fileName">pdf.name</p></li> -->
+                        <li>CV Queue: Empty</li>
+                        
+                    </ul>
+                    
+                    <div id="listBottom">
+                        <span class="Scores"> <img src="static/assets/speedometer.png" height="30px">&nbsp; Cv Scores</span> 
+                    </div>
+
+                </div><br>
+                <div id="listWraper">
+                    
+                     
+                    <label for="email">
+                        <h3>&nbsp;&nbsp;Email </h3>
+                        <input type="email" id="email" class="inputTextThrushold" name="e" placeholder="example@mail.com" value="awaisamin09@gmail.com">
+                    </label> 
+                    <label for="threshold">
+                        <h3>&nbsp;&nbsp;Threshold %</h3>
+                        <input type="number" id="threshold" class="inputTextThrushold" name="t" placeholder='75%' value="75">
+                    </label> 
+
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="static/js/code.js">
+           
+
+        </script> 
+    </body>
+
+</html>

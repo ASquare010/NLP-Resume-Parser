@@ -1,0 +1,396 @@
+body
+{
+    height: 100vh;
+    width:  100vw;
+    background-color: #252525;
+    margin: 0px;
+    padding: 0px; 
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#head
+{ 
+    display: flex;
+    justify-content: start;
+    color: white;
+    align-items: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    
+    background-color: #171717;
+      
+    padding-left: 50px;
+    margin-bottom: 30px;
+}
+#main
+{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    flex-grow: 1; 
+
+}
+#card1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 25%;     
+}
+#card3
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ 
+    background-color: #171717;
+    padding: 20px;
+    height: 30vh;
+    width: 96%;
+    border-radius: 20px;
+    
+}
+.Button input {
+    display: none;
+    
+}
+
+.Button img {
+    vertical-align: middle;
+    padding-right: 20px;
+    color: white;
+    padding-bottom: 8px;
+}
+
+.Button span {
+
+    display: inline-block;
+    padding: 10px 50px;
+    padding-top: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 28px;
+    background-color: #252525;
+     
+    line-height: 1.5;
+    color: white;
+    cursor: pointer;
+    
+} 
+.Button :hover{
+    background-color: #414141;
+    
+}
+
+
+#label
+{
+    color: #999999; 
+    font-size: larger;  
+ 
+}
+ 
+#cardMain
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+    width: 50%;    
+    border-radius: 20px;
+} 
+
+#card2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+    background-color: #171717;
+    width: 100%;    
+    border-radius: 20px;
+    padding: 10px 0px;
+} 
+#card
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+     
+    width: 80%;
+    padding: 15px;
+    background-color: #252525;
+    border-radius: 10px;
+}
+ 
+
+#StartBtn
+{
+    border: none;
+    color: transparent;
+    background-color: transparent;
+    padding: 0px;
+    display: inline-block;
+    margin:0px;
+}
+#Start
+
+{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+    background-color: #252525;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px; 
+}
+#StartBtn :hover
+
+{  
+    background-color:#4b4b4b;
+}
+#error
+{
+    color: rgb(177, 25, 25);
+    font-weight: bold; 
+}
+#cv_content
+{  
+
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height:  80%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#888;
+    background-color: #252525;
+}
+#wraperBox
+{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    background-color: #333333;
+    border-radius: 15px; 
+    padding: 10px;
+} 
+ 
+
+#listWraper
+{
+    background-color: #333333;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid #171717;
+    border-radius: 20px; 
+}
+
+.list {
+    
+    max-height: 40vh;
+    min-height: 30vh;
+    min-width: 280px;
+    overflow-y: auto; 
+    padding: 0;
+    list-style-type: none;
+}
+
+.list li {
+
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+    background-color: #171717;
+    border-radius: 10px;
+    align-items: center;
+    margin: 0px 10px; 
+    margin-bottom: 10px;
+}
+li :hover {
+ 
+    background-color: #333333;
+
+}
+
+#cv_content::-webkit-scrollbar {
+    
+    width: 10px;  
+    margin:10px;
+}
+
+#cv_content::-webkit-scrollbar-thumb {
+    
+    background-color: #888; 
+    width: 5px; 
+    
+    /* border-radius: 6px; */
+    border-right: 5px solid #333333; 
+     
+    
+}
+
+#cv_content::-webkit-scrollbar-track { 
+    border-radius: 6px;  
+     
+}
+.list::-webkit-scrollbar {
+    
+    width: 10px;  
+    margin:10px;
+}
+
+.list::-webkit-scrollbar-thumb {
+    
+    background-color: #888; 
+    width: 5px; 
+    
+    /* border-radius: 6px; */
+    border-right: 5px solid #333333; 
+     
+    
+}
+
+.list::-webkit-scrollbar-track { 
+    border-radius: 6px;  
+     
+}
+#listBottom
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 10px;
+    background-color: #171717; 
+}
+.divider {
+    height: 28px; 
+    border-right: 1px solid #888; 
+    margin: 0 8px; 
+}
+
+.Scores
+{
+    display: flex;
+    padding: 15px 35px;
+  
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 28px;
+    background-color: #252525;
+    color: white;
+    cursor: pointer;
+}
+#jdWrapper
+{
+    background-color: #333333;
+    display:  flex; 
+    flex-direction: column; 
+    max-width: 60%;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid #171717;
+    border-radius: 20px;  
+}
+#jdFileName
+{
+
+    color:#ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+
+}
+
+.inputTextThrushold {
+    padding: 20px 20px;
+    width: 300px;
+    display: inline-block; 
+    border: none;  /* Remove the default border */
+    box-sizing: border-box;
+    color: white;
+    background-color: #252525;
+    
+    /* Add inner shadow */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#left
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+#right
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin-left: 10px;
+}
+#match
+{
+    display: flex;
+    width: 300px;
+    flex-direction: column; 
+    align-items: start ;
+    background-color: #333333;
+    border-radius: 15px; 
+    padding: 20px;
+    height:  80%; 
+}
+
+.stateBox {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    padding-left: 10px;
+}
+
+.loadBar {
+    
+    margin-top: 10px;
+    height: 5px;
+    width: 96%;
+    background-color: #171717;
+    border-radius: 10px;
+}
+
+.loadBg {
+    height: 60px;
+    width: 90%;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+#load {
+    height: 100%;
+    width: 0;
+    padding: 0px 10px;
+    color: #ccc;
+    background-color: #4CAF50; /* Green color for the progress */
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+.alignRow
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
