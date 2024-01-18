@@ -1,18 +1,21 @@
-Introduction:
+#Introduction:
 
 The Resume Parser and Similarity Scorer is a tool designed to streamline the hiring process by comparing resumes (CVs) against a provided job description (JD) and generating a similarity score. This documentation outlines the setup, configuration, and usage of the system.
 
 ![UI](static/assets/se1.png)
 
 
-Features:
+#Features:
 CV Queue to parse ,
 NLP Model to check Similarity Socre,
 Recive email on a success CV,
 Userfriendely interface,
-Web-base project,
+Web-base project.
 
-Setup:
+#Tools:
+HTML, CSS, JS, tencerflow, Pytorch and Flask
+
+#Setup:
 get Model link Google drive => "https://drive.google.com/file/d/1LRavMaYRZibO_-Z9bh3306C79oxzdP4C/view?usp=sharing"
 
 Flask URL Configuration:
@@ -48,5 +51,5 @@ Use Detailed JD and try not to include a too long CV Model might Struggle  with 
 Scoring Resumes:
 The system will analyze each resume against the provided job description (JD) and generate a similarity score.
 
-Note !
-Please Like this Project
+#Note !
+Support The Project
