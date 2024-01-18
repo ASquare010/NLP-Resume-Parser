@@ -15,6 +15,10 @@ Web-base project.
 #Tools:
 HTML, CSS, JS, tencerflow, Pytorch and Flask
 
+#Sample JDs and CVs:
+samples are located in models/Examples/JD/ and  models/Examples/CV/
+
+
 #Setup:
 get Model link Google drive => "https://drive.google.com/file/d/1LRavMaYRZibO_-Z9bh3306C79oxzdP4C/view?usp=sharing"
 
