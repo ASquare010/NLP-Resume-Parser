@@ -2,7 +2,7 @@
 
 The Resume Parser and Similarity Scorer is a tool designed to streamline the hiring process by comparing resumes (CVs) against a provided job description (JD) and generating a similarity score. This documentation outlines the setup, configuration, and usage of the system.
 
-![UI](static/assets/se1.png)
+![UI](static/assets/se2.png)
 
 
 #Features:
