@@ -5,7 +5,7 @@
     base_url = "ADD local host url like 192.168----!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
     cv_base_path = "C:/Users/awais/Desktop/Ai/ReasumaScreening/models/Examples/CVs/"
     jd_base_path = "C:/Users/awais/Desktop/Ai/ReasumaScreening/models/Examples/JDs/"
-
+    
     var cvQueue = [];
     var parsedCvQueue = [];
 
@@ -44,26 +44,30 @@
 
     // void Main ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
     //Start Presed or Begin Play
-    document.getElementById('submit').addEventListener('click', function (event) {
+    document.getElementById('submit').addEventListener('click', function (event) 
+    {
+
         event.preventDefault(); // Prevents the default form submission behavior
 
-        
-        var showerror = document.getElementById('error');
-        var parsedCvList = document.getElementById('parsedCvList');
-        var card = document.getElementById('card2');
+        var showerror = document.getElementById('error'); 
+        var parsedCvList = document.getElementById('parsedCvList'); 
 
-        updateProgressBar(0);
-        parsedCvList.innerHTML = '<li>CV Queue: Empty</li>'; 
-        showerror.innerHTML = "";
-
-
-        // To check all the validity if the inputs types
-        if(checkForm())
+        if(! document.getElementById("submit").disabled)
         {
-                
-            callApi(0);
+            updateProgressBar(0);
+            parsedCvList.innerHTML = '<li>CV Queue: Empty</li>'; 
+            showerror.innerHTML = "";
 
-            card.append()
+
+            // To check all the validity if the inputs types
+            if(checkForm())
+            {
+                // disabel Start
+                document.getElementById("submit").disabled = true;
+            
+                callApi(0); 
+ 
+            }
         }
 
         
@@ -88,7 +92,7 @@ function checkForm()
     if((jdFile && cvFile && email &&(thrushHold>0 && thrushHold<100)))
     {
         showerror.style.color= '#888';
-        showerror.innerText = 'inProgress...';
+        showerror.innerText = 'in Progress...';
         return true
     }
 
@@ -103,9 +107,7 @@ function checkForm()
             showerror.innerText = 'Enter Email!'; 
         else if(!(thrushHold>0 && thrushHold<100))
             showerror.innerText = 'Set thrushHold between 1~99%'; 
-        
-
-        
+         
         return false
     } 
 
@@ -176,6 +178,7 @@ function callApi(cvIndex) {
         
         updateProgressBar(100)  
         showerror.innerHTML = "Done!";
+        document.getElementById("submit").disabled = false;
         
       return;
     }
