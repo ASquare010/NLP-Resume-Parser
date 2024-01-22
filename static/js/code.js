@@ -63,8 +63,6 @@
             // To check all the validity if the inputs types
             if(checkForm())
             {
-                // disabel Start
-                document.getElementById("submit").disabled = true;
             
                 callApi(0); 
  
@@ -92,8 +90,11 @@ function checkForm()
     
     if((jdFile && cvFile && email &&(thrushHold>0 && thrushHold<100)))
     {
+        // disabel Start
+        document.getElementById("submit").disabled = true;
         showerror.style.color= '#888';
         showerror.innerText = 'in Progress...';
+        
         return true
     }
 
@@ -177,9 +178,11 @@ function callApi(cvIndex) {
     {
         var showerror = document.getElementById('error');
         
+        // Enabel Start Button
+        document.getElementById("submit").disabled = false;
         updateProgressBar(100)  
         showerror.innerHTML = "Done!";
-        document.getElementById("submit").disabled = false;
+        
         
       return;
     }
