@@ -57,6 +57,7 @@
             updateProgressBar(0);
             parsedCvList.innerHTML = '<li>CV Queue: Empty</li>'; 
             showerror.innerHTML = "";
+            parsedCvQueue =[];
 
 
             // To check all the validity if the inputs types
