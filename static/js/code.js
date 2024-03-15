@@ -2,10 +2,13 @@
 //intlize and bind events 
 {
     //Global Varibeles
-    base_url = "ADD local host url like 192.168----!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-    cv_base_path = "C:/Users/awais/Desktop/Ai/ReasumaScreening/models/Examples/CVs/"
-    jd_base_path = "C:/Users/awais/Desktop/Ai/ReasumaScreening/models/Examples/JDs/"
+    basePath = "D:/Git/NLP-Resume-Parser"
+    // base_url = "ADD local host url like 192.168----!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    base_url = "http://172.20.193.225:8080"
     
+    
+    cv_base_path = basePath+"/models/Examples/CVs/"
+    jd_base_path = basePath+"/models/Examples/JDs/"
     var cvQueue = [];
     var parsedCvQueue = [];
 
