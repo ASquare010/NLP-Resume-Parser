@@ -42,7 +42,7 @@ Sample job descriptions (JDs) and CVs are provided in the following directories:
 
 4. **Email Notification Configuration**: Provide the sender's email and password in the `model.ipynb` file and uncomment the `sendemail()` function where you see the "ENTER EMAIL PLEASE" comment. Follow the provided steps to configure your Gmail Account.
 
-    - **Gmail Account Configuration**: Enable "Less secure app access" in your Google Account settings.
+    - **Gmail Account Configuration**: Enable "Less secure app access" in your Google Account settings if you want to use it as a email sender account.
 
 ## Usage
 
