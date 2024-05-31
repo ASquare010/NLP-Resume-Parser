@@ -4,7 +4,7 @@
     //Global Varibeles
     basePath = "D:/Git/NLP-Resume-Parser"
     // base_url = "ADD local host url like 192.168----!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-    base_url = "http://192.168.100.102:8080"
+    base_url = "http://172.20.192.214:8080"
     
     
     cv_base_path = basePath+"/models/Examples/CVs/"
